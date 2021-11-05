@@ -1,0 +1,11 @@
+Data jsou ve formatu gerber.
+Vsechny pohledy jsou ze strany spoju.
+
+
+Board.PHO - obrys desky
+M1.pho - maska vrstvy spoju
+t1.pho - potisk vrstvy spoju
+v1.pho - motiv medi v 1. vrstve
+
+t2.pho a v2.pho tvori dohromady druhou vrstvu. viz nahled_v2.pdf
+

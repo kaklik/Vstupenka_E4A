@@ -1,0 +1,200 @@
+(PCB VSTUPENKA
+ (description
+  (timeStamp "2007 11 01 18 18 37")
+  (program "CAPTURE.EXE" (Version "9.10.157"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "Blikac")
+  (date "Wednesday, October 31, 2007")
+  (document "D:\\KAKLIK\\DOKUMENTY\\SKOLA\\SPSSE\\E4A\\MATURAK\\VSTUPENKA\\VSTUPENKA.DSN")
+  (revision "A")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{Device},{Value}@{PCB Footprint}"))
+ (structure )
+ (placement
+  (component "LEDSMD_0805-1206"
+   (place D1
+    (property 
+     ("PCB Footprint" "LED0805-1206")
+     (Device LED)
+     (timestamp 0000000F)
+     ("Source Package" "LEDSMD_0805-1206")
+     (Value "LEDSMD_0805-1206"))))
+  (component BC846SMD
+   (place Q2
+    (property 
+     ("PCB Footprint" SOT23)
+     (Device "T-BEC")
+     (timestamp 00000015)
+     ("Source Package" BC846SMD)
+     (Value BC846SMD))))
+  (component BC856SMD
+   (place Q1
+    (property 
+     ("PCB Footprint" SOT23)
+     (Device "T-BEC")
+     (timestamp 00000013)
+     ("Source Package" BC856SMD)
+     (Value BC856SMD))))
+  (component R0805
+   (place R1
+    (property 
+     ("PCB Footprint" R0805)
+     (Device R)
+     (timestamp 00000003)
+     ("Source Package" R0805)
+     (Value 68k)))
+   (place R2
+    (property 
+     ("PCB Footprint" R0805)
+     (Device R)
+     (timestamp 00000005)
+     ("Source Package" R0805)
+     (Value 100k)))
+   (place R3
+    (property 
+     ("PCB Footprint" R0805)
+     (Device R)
+     (timestamp 00000007)
+     ("Source Package" R0805)
+     (Value 1k2)))
+   (place R4
+    (property 
+     ("PCB Footprint" R0805)
+     (Device R)
+     (timestamp 00000009)
+     ("Source Package" R0805)
+     (Value 15k)))
+   (place R5
+    (property 
+     ("PCB Footprint" R0805)
+     (Device R)
+     (timestamp 0000000B)
+     ("Source Package" R0805)
+     (Value 2k7))))
+  (component "C-ELYTB"
+   (place C2
+    (property 
+     ("PCB Footprint" ELYTB)
+     (Device "C-ELYT")
+     (timestamp 00000011)
+     ("Source Package" "C-ELYTB")
+     (Value 10uF))))
+  (component "C-ELYTC"
+   (place C1
+    (property 
+     ("PCB Footprint" ELYTC)
+     (Device "C-ELYT")
+     (timestamp 0000000D)
+     ("Source Package" "C-ELYTC")
+     (Value 47uF)))))
+ (library
+  (image R0805
+   (property 
+    (sourcelib C:\\LIBRARY\\ORCAD9X\\COM_RLC.OLB)
+    (Device R))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4))))
+  (image "C-ELYTC"
+   (property 
+    (sourcelib C:\\LIBRARY\\ORCAD9X\\COM_RLC.OLB)
+    (Device "C-ELYT"))
+   (pin 999 A
+    (property 
+     (pinname A)
+     (pintype 4)))
+   (pin 999 C
+    (property 
+     (pinname C)
+     (pintype 4))))
+  (image "C-ELYTB"
+   (property 
+    (sourcelib C:\\LIBRARY\\ORCAD9X\\COM_RLC.OLB)
+    (Device "C-ELYT"))
+   (pin 999 A
+    (property 
+     (pinname A)
+     (pintype 4)))
+   (pin 999 C
+    (property 
+     (pinname C)
+     (pintype 4))))
+  (image "LEDSMD_0805-1206"
+   (property 
+    (sourcelib C:\\LIBRARY\\ORCAD9X\\COM_OPTO.OLB)
+    (Device LED))
+   (pin 999 A
+    (property 
+     (pinname A)
+     (pintype 4)))
+   (pin 999 C
+    (property 
+     (pinname C)
+     (pintype 4))))
+  (image BC856SMD
+   (property 
+    (sourcelib C:\\LIBRARY\\ORCAD9X\\COM_T.OLB)
+    (Device "T-BEC"))
+   (pin 999 C
+    (property 
+     (pinname C)
+     (pintype 4)))
+   (pin 999 B
+    (property 
+     (pinname B)
+     (pintype 0)))
+   (pin 999 E
+    (property 
+     (pinname E)
+     (pintype 4))))
+  (image BC846SMD
+   (property 
+    (sourcelib C:\\LIBRARY\\ORCAD9X\\COM_T.OLB)
+    (Device "T-BEC"))
+   (pin 999 C
+    (property 
+     (pinname C)
+     (pintype 4)))
+   (pin 999 B
+    (property 
+     (pinname B)
+     (pintype 0)))
+   (pin 999 E
+    (property 
+     (pinname E)
+     (pintype 4)))))
+ (network
+  (net N00102
+   (pins
+     Q2-B Q1-C))
+  (net N00091
+   (pins
+     C1-A R5-1 Q2-C))
+  (net N00118
+   (pins
+     R2-1 C2-C Q1-E))
+  (net N00023
+   (pins
+     R1-2 R2-2 C2-A D1-A R5-2))
+  (net N00066
+   (pins
+     R1-1 R3-2 Q1-B))
+  (net N00076
+   (pins
+     R3-1 D1-C C1-C R4-2))
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     Q2-E R4-1)))
+)
