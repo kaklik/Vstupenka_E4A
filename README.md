@@ -1,6 +1,6 @@
 # Vstupenka na maturitní ples E4A 2008
 
-Návrh VIP vstupenky použité na maturitním plesu třídy E4A [Střední průmyslová škola strojní a elektrotechnická, České Budějovice](https://www.spssecb.cz/)
+Návrh VIP vstupenky použité na maturitním plese třídy E4A [Střední průmyslová škola strojní a elektrotechnická, České Budějovice](https://www.spssecb.cz/)
 
 
 ![Strana SMD součástek a spojů](/DOC/img/V1.png)
